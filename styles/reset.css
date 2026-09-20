@@ -1,0 +1,11 @@
+/* Zera margens, preenchimentos e bordas */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Remove marcadores de listas */
+ul, ol {
+  list-style: none;
+}
