@@ -5,7 +5,3 @@
   box-sizing: border-box;
 }
 
-/* Remove marcadores de listas */
-ul, ol {
-  list-style: none;
-}

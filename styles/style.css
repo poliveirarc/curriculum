@@ -1,53 +1,132 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #AEEDBF;
 }
 
 header{
-    background-color: #3F6E4B;
     display: flex;
-    gap: 30px;
-    padding: 20px;
-    border-bottom: 2px solid #ccc;
-    flex-wrap: wrap;
-}
-
-header img{
-    height: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    position: relative;
-    left: 10px;
+    gap: 10px;
+    margin: 10px;
+    height: 25vh;
 }
 
 #profile{
+    background-color: #3F6E4B;
+    border: 2px solid #1d3623;
+    border-radius: 5px;
+    box-shadow: 3px 3px 9px 0px rgba(0, 0, 0, 0.54);
+    flex-grow: 3;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+    justify-content: center;
+    align-self: center;
+    padding: 10px;
+    height: 100%;
 }
 
 #profile h1{
     font-size: 24px;
+    text-align: center;
 }
 
 #profile p{
     font-size: 18px;
+    text-align: center;
+}
+
+#profile a{
+    text-decoration: none;
+    color: #1d3623;
+    cursor: pointer;
+}
+
+#profile a:visited{
+    color: #1d3623;
+}
+
+#photo{
+    background-color: #3F6E4B;
+    border: 2px solid #1d3623;
+    border-radius: 5px;
+    box-shadow: 3px 3px 9px 0px rgba(0, 0, 0, 0.54);
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#photo img{
+    height: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid #1d3623;
 }
 
 main{
     display: flex;
     flex-direction: row-reverse;
-    background-color: #AEEDBF;
-}
-
-article{
-    text-align: justify;
 }
 
 aside{
     background-color: #3F6E4B;
-    width: 250px;
+    border: 2px solid #1d3623;
+    margin: 0px 10px 10px 10px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 9px 0px rgba(0, 0, 0, 0.54);
+    flex: 1 1 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+aside h2{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+aside ul{
+    font-size: 18px;
+    text-align: left;
+}
+
+aside p{
+   font-size: 18px;
+}
+
+article{
+    flex-grow: 2;
+    flex: 3 1 0%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: justify;
+    padding: 10px;
+}
+
+article h2{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+article h3{
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+article p{
+    font-size: 18px;
+}
+
+hr {
+    border: none;
+    height: 2px; 
+    background-color: #1d3623;
+}
+
+.resumo p{
+    margin-top: 10px;
 }
