@@ -1,27 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #AEEDBF;
+    background-color: #e0dede;
+    display: flex;
+    flex-flow: column;
 }
 
 header{
     display: flex;
+    flex-flow: row wrap;
+    align-content: stretch;
     gap: 10px;
-    margin: 10px;
-    height: 25vh;
+    padding: 10px;
+}
+
+div#dados {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+div.info{
+    display: flex;
+    text-align: left;
+    margin-top: 2px;
+}
+
+div.info p{
+    margin-left: 10px;
+    font-size: 18px;
+    text-align: center;
+}
+
+div.info a{
+    margin-left: 10px;
+    text-decoration: none;
+    color: #1d3623;
+    cursor: pointer;
 }
 
 #profile{
+    display: flex;
+    flex-direction: column;
     background-color: #3F6E4B;
     border: 2px solid #1d3623;
     border-radius: 5px;
     box-shadow: 3px 3px 9px 0px rgba(0, 0, 0, 0.54);
-    flex-grow: 3;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-self: center;
-    padding: 10px;
-    height: 100%;
+    flex: 3 1 500px;
+    align-items: center;
 }
 
 #profile h1{
@@ -34,10 +65,9 @@ header{
     text-align: center;
 }
 
-#profile a{
-    text-decoration: none;
-    color: #1d3623;
-    cursor: pointer;
+#profile i{
+    font-size: 18px;
+    text-align: center;
 }
 
 #profile a:visited{
@@ -49,42 +79,40 @@ header{
     border: 2px solid #1d3623;
     border-radius: 5px;
     box-shadow: 3px 3px 9px 0px rgba(0, 0, 0, 0.54);
-    flex-grow: 1;
     display: flex;
+    flex-flow: row wrap;
+    align-content: center;
     justify-content: center;
-    align-items: center;
-    height: 100%;
+    flex: 1 1 100px;
 }
 
 #photo img{
-    height: 150px;
-    height: 150px;
     border-radius: 50%;
     border: 2px solid #1d3623;
+    height: 150px;
 }
 
 main{
     display: flex;
-    flex-direction: row-reverse;
+    flex-flow: row wrap;
+    gap: 10px;
+    padding: 10px;
 }
 
 aside{
     background-color: #3F6E4B;
     border: 2px solid #1d3623;
-    margin: 0px 10px 10px 10px;
     border-radius: 5px;
     box-shadow: 3px 3px 9px 0px rgba(0, 0, 0, 0.54);
-    flex: 1 1 0%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+    flex: 1 1 100px;
+    padding-left: 20px;
 }
 
 aside h2{
     font-size: 20px;
-    text-align: center;
-    margin-top: 20px;
+    text-align: left;
+    margin: 20px 0px;
+    
 }
 
 aside ul{
@@ -97,13 +125,7 @@ aside p{
 }
 
 article{
-    flex-grow: 2;
-    flex: 3 1 0%;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    text-align: justify;
-    padding: 10px;
+    flex: 3 1 500px;
 }
 
 article h2{
